@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Debate Portal</title>
+
+    <link rel="stylesheet"
+            href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+      <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js">
+      </script>
+      <script src=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
+      </script>
+
+
+
+  </head>
+  <body >
+
+    <nav class="navbar  navbar-expand-lg navbar-light bg-secondary"  >
+      <div class="container-fluid" >
+        <a class="navbar-brand text-white" href="/">App </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+            
+              <li class="nav-item ">
+                <a class="nav-link active text-white" aria-current="page" href="addtask">AddTask</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active text-white" aria-current="page" href="alltask">TaskList</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active text-white" aria-current="page" href="completetask">CompletedTask</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link active text-white" aria-current="page" href="pendingtask">PendingTask</a>
+              </li>
+              
+            
+  
+        </div>
+      
+        
+      </div>
+    </nav>
+{% block content %}
+
+ 
+
+{% endblock %}
+
+
+     
+
+  </body>
+</html>

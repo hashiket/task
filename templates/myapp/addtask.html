@@ -1,0 +1,25 @@
+{% extends 'myapp/main.html' %}
+{% block content %}
+    <br>
+    <div>
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center"  >
+                <div id="login-column" class="col-md-4" style="background-color:#e3e6e5">
+                    <div id="login-box" class="col-md-12">
+                        <form  class="form" action="addtask" method="post">
+                          {% csrf_token %}
+                            <h3 class="text-center ">Add Task!!</h3>
+                            <div class="form-group">
+                                <label for="first_name" class=""> Name:</label><br>
+                                <input type="text" name="name" id="name" class="form-control" required>
+                            </div>
+                           
+                            <div class="form-group text-center">
+                                 <input type="submit"  class=" btn btn-info btn-md" value="Submit">
+                            </div>
+                            
+                        </form>
+                       
+                    </div>
+                </div>
+{% endblock %}

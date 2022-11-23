@@ -1,0 +1,9 @@
+{% extends "myapp/main.html" %}
+{% block content %}
+    <div class="container">
+    Task : {{task.name}} <br>
+    Task Status : {% if task.status %} Completed {% else %} Incomplete <br>
+    </button><button><a href="complete{{task.id}}">Update Completed</a></button>{% endif %} <br>
+    <button><a href="delete{{task.id}}">DELETE</a>
+    </div>
+{% endblock %}

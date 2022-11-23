@@ -1,0 +1,9 @@
+{% extends 'myapp/main.html' %}
+{% block content %}
+    <ol>
+    {% for task in tasks %}
+        <a href={{task.id}}><li>{{task.name}}</li></a>
+    {% endfor %}
+    </ol>
+    
+{% endblock %}
